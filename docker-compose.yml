@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  cha_casa_nova:
+    image: cha-casa-nova-front
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    network_mode: "host"
